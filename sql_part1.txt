@@ -1,0 +1,20 @@
+CREATE DATABASE dbproject_buyme;
+USE dbproject_buyme;
+
+CREATE TABLE end_user(
+	userID VARCHAR(25) PRIMARY KEY,
+	password VARCHAR(25) default NULL,
+    name VARCHAR(25) default NULL,
+    email VARCHAR(25) default NULL
+);
+
+select * from end_user;
+
+insert into end_user values('jashs13', 'pwd123jash', 'Jash', 'jash@gm.com');
+insert into end_user values('dhruvil15', 'pwd456dhruvil', 'Dhruvil', 'dhruvil@gm.com');
+insert into end_user values('yajna01', 'pwd789yajna', 'Yajna', 'yajna@gm.com');
+insert into end_user values('root', 'root', 'user', 'user@gm.com');
+
+select * from end_user;
+
+show databases;
